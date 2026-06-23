@@ -60,7 +60,7 @@ export default function Hero() {
     <section className="relative h-screen w-full bg-luxury-black overflow-hidden flex items-center justify-center">
       {/* 3D Canvas Background */}
       <div className="absolute inset-0 z-0 opacity-80 mix-blend-screen pointer-events-none">
-        <Canvas camera={{ position: [0, 0, 5], fov: 45 }}>
+        <Canvas camera={{ position: [0, 0, 5], fov: 45 }} dpr={[1, 1.5]}>
           <ambientLight intensity={0.5} />
           <directionalLight position={[10, 10, 5]} intensity={1.5} />
           <directionalLight position={[-10, -10, -5]} intensity={0.5} color="#444" />

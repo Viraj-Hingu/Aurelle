@@ -13,8 +13,8 @@ export default function NewCollection() {
   return (
     <section ref={ref} className="relative h-[60vh] sm:h-[70vh] md:h-[80vh] w-full overflow-hidden flex items-center justify-center">
       <motion.div
-        style={{ y }}
-        className="absolute inset-0 z-0"
+        style={{ y, WebkitTransform: "translateZ(0)" }}
+        className="absolute inset-0 z-0 will-change-transform"
       >
         <img
           src="/collection_summer.png"

@@ -75,8 +75,8 @@ export default function Lookbook() {
         <div className="hidden md:grid md:grid-cols-12 gap-8 items-center">
           {/* Left Text Block */}
           <motion.div
-            style={{ y: y1 }}
-            className="md:col-span-4 flex flex-col justify-center order-2 md:order-1"
+            style={{ y: y1, WebkitTransform: "translateZ(0)" }}
+            className="md:col-span-4 flex flex-col justify-center order-2 md:order-1 will-change-transform"
           >
             <h3 className="text-2xl md:text-3xl font-playfair mb-6 text-balance">The Art of Subtlety</h3>
             <p className="font-inter text-luxury-gray leading-relaxed mb-8">
@@ -89,8 +89,8 @@ export default function Lookbook() {
 
           {/* Center Main Image */}
           <motion.div
-            style={{ y: y2 }}
-            className="md:col-span-5 relative aspect-[4/5] order-1 md:order-2 rounded-2xl overflow-hidden shadow-2xl"
+            style={{ y: y2, WebkitTransform: "translateZ(0)" }}
+            className="md:col-span-5 relative aspect-[4/5] order-1 md:order-2 rounded-2xl overflow-hidden shadow-2xl will-change-transform"
           >
             <div className="absolute inset-0 bg-luxury-white/5" />
             <img
@@ -100,8 +100,8 @@ export default function Lookbook() {
             />
             {/* Parallax floating element */}
             <motion.div
-              style={{ y: y3 }}
-              className="absolute -bottom-10 -right-10 bg-luxury-white text-luxury-black p-6 md:p-8 max-w-[200px] md:max-w-[250px] shadow-2xl hidden md:block"
+              style={{ y: y3, WebkitTransform: "translateZ(0)" }}
+              className="absolute -bottom-10 -right-10 bg-luxury-white text-luxury-black p-6 md:p-8 max-w-[200px] md:max-w-[250px] shadow-2xl hidden md:block will-change-transform"
             >
               <p className="font-playfair text-lg md:text-xl italic leading-tight">
                 "Fashion is architecture: it is a matter of proportions."
@@ -111,8 +111,8 @@ export default function Lookbook() {
 
           {/* Right Image Block */}
           <motion.div
-            style={{ y: y1 }}
-            className="md:col-span-3 order-3 flex flex-col gap-10"
+            style={{ y: y1, WebkitTransform: "translateZ(0)" }}
+            className="md:col-span-3 order-3 flex flex-col gap-10 will-change-transform"
           >
             <div className="aspect-square overflow-hidden rounded-lg">
               <img
