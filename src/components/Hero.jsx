@@ -35,7 +35,7 @@ export default function Hero() {
           >
             <span className="block">Timeless</span>
             <span className="block">Style For</span>
-            <span className="relative inline-block">
+            <span className="relative inline-block text-[#c8a97e]">
               Modern
               {/* Hand-drawn SVG Circle Highlight */}
               <motion.svg
