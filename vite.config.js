@@ -10,8 +10,6 @@ export default defineConfig({
       output: {
         manualChunks(id) {
           if (id.includes('node_modules')) {
-            if (id.includes('three')) return 'vendor-three';
-            if (id.includes('@react-three')) return 'vendor-react-three';
             if (id.includes('framer-motion')) return 'vendor-framer-motion';
             return 'vendor'; // all other dependencies go here
           }
